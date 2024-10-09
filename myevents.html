@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calendar</title>
+    <link rel="stylesheet" href="events.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Event Calendar</h1>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search by event name or description">
+        </div>
+        <div class="calendar-container">
+            <div class="calendar">
+                <h2>Select a Date</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body">
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="event-form">
+                <h3>Add Event for: <span id="selected-date">No date selected</span></h3>
+                <input type="text" id="event-title" placeholder="Event Title">
+                <textarea id="event-description" placeholder="Event Description"></textarea>
+                <button id="add-event-btn">Add Event</button>
+
+                <div class="events-list" id="events-list">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="events.js"></script>
+</body>
+</html>

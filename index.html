@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">My Logo</div>
+        <nav class="nav-menu" id="nav-menu">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="myevents.html" onclick="handleClick()">My Events</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero" class="hero">
+      <h2>Alessio Gega</h2>
+      <p>Bringing Ideas to Life Through Code</p>
+      <a href="#projects">View My Work</a>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-left-container">
+        <img src="assets/img1.jpg" alt="Profile Picture" />
+      </div>
+      <div class="about-right-container">
+        <h6>ABOUT ME</h6>
+        <h2>I Develop Systems that Work</h2>
+        <p>
+          Excepteur sint occaecat cupidatat non proident, sunt in <br />culpa
+          qui officia deserunt mollit anim id est laborum. Nulla pariatur
+          excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.
+        </p>
+        <p>Oremque laudantium, totaeaque ipsa quae</p>
+
+        <div class="experience">
+          <h3>Experience</h3>
+          <ul>
+            <li>
+              <div class="experience-icon">
+                <img src="assets/enterprise.png" alt="XYZ Company Logo" />
+              </div>
+              <div class="experience-info">
+                <h4>Software Developer at XYZ Company</h4>
+                <span>2022 - Present</span>
+                <p>
+                  Developing scalable web applications and improving user
+                  experience.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="experience-icon">
+                <img src="assets/enterprise.png" alt="ABC Tech Logo" />
+              </div>
+              <div class="experience-info">
+                <h4>Intern at ABC Tech</h4>
+                <span>2021 - 2022</span>
+                <p>
+                  Assisted in developing front-end components and participated
+                  in code reviews.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="experience-icon">
+                <img src="assets/enterprise.png" alt="Freelance Logo" />
+              </div>
+              <div class="experience-info">
+                <h4>Freelancer</h4>
+                <span>2020 - 2021</span>
+                <p>
+                  Worked on various projects, including e-commerce websites and
+                  personal blogs.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <hr />
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2 class="section-title" style="color: white">What I offer</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <img src="assets/check.png" alt="Web Development Icon" />
+          <h3>Web Development</h3>
+          <p>
+            Ludantium totam rem aperia meaququae ab tatis et quasi architecto
+            beatae vit dunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="assets/check.png" alt="Software Development Icon" />
+          <h3>Software Development</h3>
+          <p>
+            Ludantium totam rem aperia meaququae ab tatis et quasi architecto
+            beatae vit dunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="assets/check.png" alt="System Development Icon" />
+          <h3>System Development</h3>
+          <p>
+            Ludantium totam rem aperia meaququae ab tatis et qu asi architecto
+            beatae vit dunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="assets/check.png" alt="Security Analysis Icon" />
+          <h3>Security Analysis</h3>
+          <p>
+            Ludantium totam rem aperia meaququae ab tatis et quasi architecto
+            beatae vit dunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="category-filter">
+        <button class="category-btn" data-category="All">All</button>
+        <button class="category-btn" data-category="React">React</button>
+        <button class="category-btn" data-category="HTML/CSS">HTML/CSS</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="assets/applay.webp" alt="Project 1" />
+          <h3>Project Title 1</h3>
+          <h6>React</h6>
+          <p>
+            A brief description of the project, highlighting the technologies
+            used and the purpose.
+          </p>
+          <a href="https://applay.netlify.app/" target="_blank">Live Demo</a>
+          <a href="#" target="_blank">Repository</a>
+        </div>
+        <div class="project-card">
+          <img src="assets/travel.jpg" alt="Project 2" />
+          <h3>Project Title 2</h3>
+          <h6>HTML/CSS</h6>
+          <p>
+            A brief description of the project, highlighting the technologies
+            used and the purpose.
+          </p>
+          <a href="https://travelerapp.netlify.app/" target="_blank"
+            >Live Demo</a
+          >
+          <a href="#" target="_blank">Repository</a>
+        </div>
+        <div class="project-card">
+          <img src="assets/icharge.png" alt="Project 3" />
+          <h3>Project Title 3</h3>
+          <h6>React</h6>
+          <p>
+            A brief description of the project, highlighting the technologies
+            used and the purpose.
+          </p>
+          <a href="#" target="_blank">Live Demo</a>
+          <a href="#" target="_blank">Repository</a>
+        </div>
+        <div class="project-card">
+          <img src="assets/elava.webp" alt="Project 4" />
+          <h3>Project Title 4</h3>
+          <h6>React</h6>
+          <p>
+            A brief description of the project, highlighting the technologies
+            used and the purpose.
+          </p>
+          <a href="#" target="_blank">Live Demo</a>
+          <a href="#" target="_blank">Repository</a>
+        </div>
+        <div class="project-card">
+          <img src="assets/applay.webp" alt="Project 1" />
+          <h3>Project Title 1</h3>
+          <h6>React</h6>
+          <p>
+            A brief description of the project, highlighting the technologies
+            used and the purpose.
+          </p>
+          <a href="https://applay.netlify.app/" target="_blank">Live Demo</a>
+          <a href="#" target="_blank">Repository</a>
+        </div>
+        <div class="project-card">
+          <img src="assets/travel.jpg" alt="Project 2" />
+          <h3>Project Title 2</h3>
+          <h6>HTML/CSS</h6>
+          <p>
+            A brief description of the project, highlighting the technologies
+            used and the purpose.
+          </p>
+          <a href="https://travelerapp.netlify.app/" target="_blank"
+            >Live Demo</a
+          >
+          <a href="#" target="_blank">Repository</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <div class="skills-content">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-description">
+          I have gained expertise in various technologies that allow me to
+          deliver high-quality solutions across different platforms.
+        </p>
+        <div class="skills-list">
+          <div class="skill-item">
+            <img src="assets/atom.png" alt="React Icon" class="skill-icon" />
+            <div class="skill-text">
+              <h3>React Development</h3>
+              <p>Proficient in building interactive UIs with React.</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <img
+              src="assets/java-script.png"
+              alt="JavaScript Icon"
+              class="skill-icon"
+            />
+            <div class="skill-text">
+              <h3>JavaScript</h3>
+              <p>Experienced in modern JavaScript (ES6+).</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <img src="assets/css-3.png" alt="CSS Icon" class="skill-icon" />
+            <div class="skill-text">
+              <h3>CSS & Responsive Design</h3>
+              <p>
+                Skilled in creating visually appealing and responsive layouts.
+              </p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <img src="assets/java.png" alt="Java Icon" class="skill-icon" />
+            <div class="skill-text">
+              <h3>Java</h3>
+              <p>Experience in Java for back-end.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-image">
+        <img src="assets/img1.jpg" alt="Skills Image" class="skills-img" />
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-description">
+            Reach out to me directly via phone, email, or simply fill out the
+            form on the right. I'm always open to discussing new projects,
+            creative ideas, or opportunities to be part of your visions.
+          </p>
+          <ul class="contact-details">
+            <li>
+              <img src="assets/phone-call.png" alt="Phone" />
+              <span>+123 456 7890</span>
+            </li>
+            <li>
+              <img src="assets/mail.png" alt="" />
+              <span>alessiogega@example.com</span>
+            </li>
+            <li>
+              <img src="assets/location.png" alt="" />
+              <span>Tirana, Albania</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form class="contact-form" action="" method="POST">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Type your message here..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn" onclick="formValidation(event)">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-social">
+        <a href="https://twitter.com" target="_blank"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a href="https://github.com" target="_blank"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fa fa-facebook-f"></i
+        ></a>
+      </div>
+      <p>© Copyrights <span id="year"></span> All rights reserved.</p>
+    </footer>
+    <div class="scrolltotop">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+    <div class="modal" id="project-modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-image">
+          <img id="modal-image" src="" />
+        </div>
+        <div class="modal-text">
+          <h3 id="modal-title" class="modal-title"></h3>
+          <p id="modal-description" class="modal-description"></p>
+          <a id="modal-live-demo" href="" target="_blank">Live Demo</a>
+          <a id="modal-repo" href="" target="_blank">Repository</a>
+        </div>
+      </div>
+    </div>        
+    <script src="index.js"></script>
+    <script>
+      function handleClick() {
+        console.log("Link clicked! Navigating to My Events page.");
+        window.location.href = "myevents.html";
+      }
+    </script>
+    
+  </body>
+</html>
