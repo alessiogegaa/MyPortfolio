@@ -1,0 +1,27 @@
+.scrolltotop {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scrolltotop:hover {
+    background-color: #45a049;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 24px;
+    padding-left: 12px;
+    padding-top: 10px;
+  }
+  

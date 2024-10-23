@@ -1,0 +1,127 @@
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar {
+    width: 40%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.calendar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.calendar th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.calendar td:hover {
+    background-color: #f0f0f0;
+}
+
+
+.event-form {
+    width: 55%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.event-form h3 {
+    margin-top: 0;
+}
+
+.event-form input, .event-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.event-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.event-form button:hover {
+    background-color: #45a049;
+}
+
+/* Events List */
+.events-list {
+    margin-top: 20px;
+}
+
+.event-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-item h4 {
+    margin: 0;
+}
+
+.event-item p {
+    margin: 5px 0 0 0;
+}
+
+.event-item button {
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.event-item button:hover {
+    background-color: #e03a48;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}

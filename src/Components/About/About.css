@@ -1,0 +1,151 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 40px;
+    background-color: #f8f9fa;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .about-left-container img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .about-right-container {
+    max-width: 650px;
+    padding: 0 200px;
+  }
+  
+  .about-right-container h6 {
+    font-size: 16px;
+    color: #4caf50;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  
+  .about-right-container h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+  
+  .about-right-container p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.75;
+    margin-bottom: 20px;
+  }
+  
+  .experience {
+    margin-top: 30px;
+  }
+  
+  .experience h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .experience ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .experience li {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .experience li:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .experience-icon {
+    flex-shrink: 0;
+    margin-right: 15px;
+    padding-top: 40px;
+  }
+  
+  .experience-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience-info {
+    flex-grow: 1;
+  }
+  
+  .experience li h4 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .experience li span {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .experience li p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .about-right-container hr {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin-top: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-left-container img {
+      width: 180px;
+      height: 180px;
+    }
+  
+    .about-right-container {
+      padding: 0;
+    }
+  
+    .experience li {
+      flex-direction: column;
+      padding: 20px 10px;
+    }
+  
+    .experience-icon img {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 10px;
+    }
+  
+    .experience-info {
+      text-align: center;
+    }
+  }

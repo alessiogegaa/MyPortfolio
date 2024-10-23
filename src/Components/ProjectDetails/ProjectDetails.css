@@ -1,0 +1,139 @@
+/* ProjectDetails.css */
+
+/* General styling for not found message */
+.pd-not-found {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ff6b6b;
+    padding: 2rem;
+  }
+  
+  /* Main container for project details */
+  .pd-project-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1.5rem;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+  }
+  
+  /* Content container with grid layout */
+  .pd-project-details-content {
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2.5rem;
+    padding: 2.5rem;
+    animation: pd-fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Image styling with hover effect */
+  .pd-project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .pd-project-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Project info and text styling */
+  .pd-project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .pd-project-title {
+    font-size: 2.4rem;
+    color: #2f3542;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .pd-project-description {
+    font-size: 1.1rem;
+    color: #57606f;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pd-project-category {
+    font-size: 1rem;
+    color: #1e90ff;
+    background-color: #e3f2fd;
+    display: inline-block;
+    padding: 0.4rem 0.7rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .pd-category-label {
+    font-weight: bold;
+  }
+  
+  /* Project links styling */
+  .pd-project-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.2rem;
+  }
+  
+  .pd-link-button {
+    text-decoration: none;
+    padding: 0.9rem 1.8rem;
+    background-color: #1e90ff;
+    color: #ffffff;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(30, 144, 255, 0.3);
+  }
+  
+  .pd-link-button:hover {
+    background-color: #187bcd;
+    transform: translateY(-3px);
+  }
+  
+  .pd-link-button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .pd-project-details-content {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    
+    .pd-project-info {
+      padding: 1rem;
+    }
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes pd-fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
